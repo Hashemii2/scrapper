@@ -12,6 +12,7 @@ const scrapperInfo = document.querySelector('#info');
   data.forEach((element) => {
     const li = document.createElement('li');
     li.setAttribute('class', 'item');
+    li.dir = 'rtl';
     ul.appendChild(li);
 
     let key = Object.keys(element),

@@ -1,3 +1,4 @@
+import { analysis } from './analysis.js';
 const scrapperInfo = document.querySelector('#info');
 
 (async function getScrapData() {
@@ -21,4 +22,8 @@ const scrapperInfo = document.querySelector('#info');
     li.innerHTML += `${key}: ${value}`;
     console.log(`${key}: ${value}`);
   });
+})();
+
+(async function () {
+  await analysis();
 })();

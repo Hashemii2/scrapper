@@ -11,8 +11,10 @@ export async function analysis() {
 
   inputElem.type = 'button';
   inputElem.value = 'تحلیل بازار';
+  inputElem.style = 'margin-top: 2em';
 
   divElem.setAttribute('id', 'analysis');
+  divElem.style = 'margin-top: 2em';
 
   document.body.appendChild(inputElem);
   document.body.appendChild(divElem);

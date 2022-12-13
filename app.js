@@ -1,5 +1,5 @@
 const express = require('express');
-const getScrapData = require('./scarper');
+const getScrapData = require('./scrapers/stockIndices');
 
 const app = express();
 

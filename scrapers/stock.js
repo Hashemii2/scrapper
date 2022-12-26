@@ -8,11 +8,11 @@ async function stockScrapper() {
 
   const $ = cheerio.load(data);
   let finalData = [];
-  let arr = [];
 
   $('#TseTab1Elm > div.box1.white > div.content > table > tbody > tr').each(
     (_, p) => {
       let allData = [];
+      let dataObj = {};
 
       $(p)
         .find('td')
@@ -20,19 +20,13 @@ async function stockScrapper() {
           allData.push($(c).text());
         });
 
-      arr.push(allData);
+      dataObj['نماد'] = allData[0];
+      dataObj['قیمت پایانی'] = allData[1];
+      dataObj['آخرین معامله'] = allData[3];
+
+      finalData.push(dataObj);
     }
   );
-
-  arr.forEach((elem) => {
-    let dataObj = {};
-
-    dataObj['نماد'] = elem[0];
-    dataObj['قیمت پایانی'] = elem[1];
-    dataObj['آخرین معامله'] = elem[3];
-
-    finalData.push(dataObj);
-  });
 
   return finalData;
 }

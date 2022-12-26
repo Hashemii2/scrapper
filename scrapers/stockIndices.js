@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-async function stockMarketScraper() {
+async function stockIndicesScraper() {
   let marketData = [];
 
   try {
@@ -57,4 +57,4 @@ async function stockMarketScraper() {
   return marketData;
 }
 
-module.exports = stockMarketScraper;
+module.exports = stockIndicesScraper;

@@ -37,4 +37,4 @@ async function stockScrapper() {
   return finalData;
 }
 
-module.export = stockScrapper;
+module.exports = stockScrapper;

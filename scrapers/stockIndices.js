@@ -53,7 +53,6 @@ async function stockIndicesScraper() {
   } catch (err) {
     console.log(err);
   }
-
   return marketData;
 }
 

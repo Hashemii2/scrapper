@@ -1,5 +1,5 @@
 # scrapper
-scrapper application that get data from the stock exchange website and shows it on the DOM with express, cheerio and html
+Scrapper application that get data from the Stock exchange website and shows it on the DOM with express, cheerio and html
 
 
 for run app follow the steps below:

@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scrapper</title>
   </head>
-  <body style="background-color: aliceblue">
-    <h1>بورس در یک نگاه</h1>
+  <body
+    style="
+      background-image: url(https://iranbourse.net/wp-content/uploads/2020/12/Bar-graph-21.jpg);
+    "
+  >
+    <h1 style="color: rgb(135, 29, 234)">بورس در یک نگاه</h1>
     <span id="time"></span>
     <div id="info"></div>
-    <h3 style="color: red">نمادهای پرتراکنش...working on that soon</h3>
-    <script type="module" src="./index.js"></script>
+    <h2 style="color: rgb(163, 116, 191)">نمادهای پر تراکنش</h2>
+    <div id="symbol"></div>
+    <script type="module" src="./stockIndices.js"></script>
+    <script type="module" src="./stock.js"></script>
     <script src="./time.js"></script>
   </body>
 </html>

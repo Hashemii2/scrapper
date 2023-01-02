@@ -1,5 +1,6 @@
 const express = require('express');
 const getScrapData = require('./scrapers/stockIndices');
+const stock = require('./scrapers/stock');
 
 const app = express();
 
@@ -11,6 +12,11 @@ app.get('/api/data', async (req, res) => {
   res.json(response);
 });
 
+app.get('/api/stock', async (req, res) => {
+  const response = await stock();
+
+  res.json(response);
+});
 const port = process.env.PORT || 4040;
 
 app.listen(port, () => {

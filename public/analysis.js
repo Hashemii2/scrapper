@@ -12,6 +12,7 @@ export async function analysis() {
   inputElem.type = 'button';
   inputElem.value = 'تحلیل بازار';
   inputElem.style = 'margin-top: 2em';
+  inputElem.style.color = 'rgb(163, 116, 191)';
 
   divElem.setAttribute('id', 'analysis');
   divElem.style = 'margin-top: 2em';
